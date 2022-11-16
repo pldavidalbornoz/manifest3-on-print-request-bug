@@ -1,53 +1,14 @@
 {
   "name": "Print Test Extension",
   "short_name": "Print Test",
-  "version": "",
+  "version": "0.1",
   "description": "testing",
   "permissions": [
-    "printerProvider",
+    "printerProvider"
   ],
-  "host_permissions": [
-    "http://*/*",
-    "https://*/*"
-  ],
-  "options_page": "options.html",
-  "storage": {
-    "managed_schema": "schema.json"
-  },
   "background":{
     "service_worker": "js/background.js",
     "type": "module"
   },
-  "action":{
-    "default_popup": "popup.html",
-    "default_icon": {}
-  },
-  "icons": {},
-  "key": "",
-  "content_security_policy": {
-    "extension_pages": "script-src 'self'; object-src 'self'"
-  },
-  "manifest_version": 3,
-  "content_scripts": [
-    {
-      "matches": [
-        "https://*.printerlogic.com/*",
-        "https://*.printercloud.com/*",
-        "https://*.goosefish88.com/*",
-        "https://*.pl-stage.com/*",
-        "https://*.printercloud5.com/*",
-        "https://*.printercloud10.com/*",
-        "https://*.pl-va.us/*",
-        "https://*.korobkin.org/*",
-        "https://*.atb.ab.com/*",
-        "http://*.nafcs.pri/*",
-        "http://*/*",
-        "https://*/*"
-      ],
-      "js": [
-        "js/content.js"
-      ],
-      "run_at": "document_end"
-    }
-  ]
+  "manifest_version": 3
 }
