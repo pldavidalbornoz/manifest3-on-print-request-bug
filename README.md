@@ -6,3 +6,6 @@ I've encountered a bug where the print dialog will get stuck waiting for the pen
 I've included an example
 
 This only happens the first time, or at least I haven't encountered it after the first time
+
+## Testing
+Choose this directory to load unpacked into Chrome.  When printing, a new printer will show up, **a test printer**, which you can use to trigger the bug.
